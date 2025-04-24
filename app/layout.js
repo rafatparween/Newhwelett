@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "hewlett-printer-solution.online",
-  description: "hewlett-printer-solution.onlinee",
+  title: " Uzair Graphic & Printing",
+  description: " Uzair Graphic & Printing",
 };
 
 export default function RootLayout({ children }) {

@@ -10,7 +10,7 @@ const Navbar = () => {
           <div className="flex items-center">
             <Link legacyBehavior href="/">
               <a className="text-2xl font-bold text-blue-600">
-              Hewlett Printer Solution Online
+              Uzair Graphic & Printing
               </a>
             </Link>
           </div>
