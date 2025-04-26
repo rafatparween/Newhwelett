@@ -5,7 +5,7 @@ function Slider() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const slides = [
     {
-        leftImage: "/imageforr.jpg", rightImage: "/imageone.webp",  title: "Print in High Definition",
+        leftImage: "/imageforr.jpg", rightImage: "/img2.jpg",  title: "Print in High Definition",
         subtitle: "Get Your Prints in Stunning Clarity",
       },
     {
@@ -14,11 +14,11 @@ function Slider() {
       subtitle: "Affordable and Reliable Printers",
     },
     {
-      leftImage: "/imageseven.jpg", rightImage: "/imageeight.webp",  title: "Print in High Definition",
+      leftImage: "/imageseven.jpg", rightImage: "/img3.jpg",  title: "Print in High Definition",
       subtitle: "Get Your Prints in Stunning Clarity",
     },
     {
-      leftImage: "/imagefive.webp",rightImage:"/imagesix.jpg",  title: "Quality Printers",
+      leftImage: "/img4.jpg",rightImage:"/imagesix.jpg",  title: "Quality Printers",
       subtitle: "Revolutionize Your Printing",
     },
   ];

@@ -32,8 +32,6 @@
 //   );
 // }
 
-
-
 import { Geist, Geist_Mono } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
@@ -56,24 +54,23 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <head>
-        {/* Google Ads - gtag.js script */}
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        
+        {/* ✅ Google Ads - gtag.js script (must be inside body, not head) */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=AW-16967997482"
           strategy="afterInteractive"
         />
         <Script id="gtag-init" strategy="afterInteractive">
           {`
+            console.log("✅ GTAG script loaded!");
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
             gtag('config', 'AW-16967997482');
           `}
         </Script>
-      </head>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+
         {/* <Navbar /> */}
         <main>{children}</main>
         {/* Footer */}
