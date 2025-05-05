@@ -182,6 +182,7 @@ return (
     </div>
 
     <div className="mt-[350px]"></div>
+    <Footer/>
 
   
     <JivoChat />
