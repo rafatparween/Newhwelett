@@ -5,21 +5,22 @@ function Slider() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const slides = [
     {
-        leftImage: "/imageforr.jpg", rightImage: "/img2.jpg",  title: "Print in High Definition",
-        subtitle: "Get Your Prints in Stunning Clarity",
-      },
-    {
-      leftImage: "/imagetwo.webp",
-      rightImage: "/imagethree.jpg", title: "Print Your Ideas",
-      subtitle: "Affordable and Reliable Printers",
+      leftImage: "https://cms.cloudinary.vpsvc.com/image/upload/c_scale,dpr_auto,f_auto,w_960/India%20LOB/NVHP/New%20Home%20Page/Production/18th%20July%202024/IN_VC_ZIA-fashion_Marquee_01_Left ",
+      rightImage: "https://cms.cloudinary.vpsvc.com/image/upload/c_scale,dpr_auto,f_auto,w_960/India%20LOB/NVHP/New%20Home%20Page/Production/18th%20July%202024/IN_VC_ZIA-fashion_Marquee_02_Right",
+      title: "My Name, My Pride",
+      subtitle: "100 Visiting Cards at Rs 200",
     },
     {
-      leftImage: "/imageseven.jpg", rightImage: "/img3.jpg",  title: "Print in High Definition",
-      subtitle: "Get Your Prints in Stunning Clarity",
+      leftImage: "https://cms.cloudinary.vpsvc.com/image/upload/c_scale,dpr_auto,f_auto,q_auto:good,w_700/India%20LOB/Stamps/Self%20Inking%C2%A0-%2064x44%20mm/IN_Self-Inking-Stamps-64x44mm_Overview",
+      rightImage: "https://cms.cloudinary.vpsvc.com/image/upload/c_scale,dpr_auto,f_auto,q_auto:good,w_700/India%20LOB/marketing%20Materials/Keny%20File%20Ring%20Binder%20File/IN_Keny-File-Ring-Binder-File_Overview",
+      title: "Another Title",
+      subtitle: "Another Subtitle",
     },
     {
-      leftImage: "/img4.jpg",rightImage:"/imagesix.jpg",  title: "Quality Printers",
-      subtitle: "Revolutionize Your Printing",
+      leftImage: "https://cms.cloudinary.vpsvc.com/image/upload/c_scale,dpr_auto,f_auto,q_auto:good,w_700/India%20LOB/visiting-cards/vc/IN_PremiumPlusVisitingcards_Product_Page_tile",
+      rightImage: "https://cms.cloudinary.vpsvc.com/image/upload/c_scale,dpr_auto,f_auto,q_auto:good,w_700/India%20LOB/visiting-cards/Velvet%20Touch%20Visiting%20Cards/IN_Velvet-Touch-Visiting-Cards_Overview",
+      title: "Third Title",
+      subtitle: "Third Subtitle",
     },
   ];
 
@@ -53,7 +54,7 @@ function Slider() {
         style={{ transform: `translateX(-${currentSlide * 100}%)` }}
       >
         {slides.map((slide, index) => (
-          <div key={index} className="min-w-full bg-gradient-to-r from-blue-500 via-teal-600 to-indigo-700 flex flex-row justify-between items-center py-10 px-20">
+          <div key={index} className="min-w-full bg-[#f3ead9] flex flex-row justify-between items-center py-10 px-20">
             <div className="relative w-[30%] h-[400px]">
               <img
                 src={slide.leftImage}

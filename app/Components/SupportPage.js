@@ -3,7 +3,7 @@ import Image from 'next/image';
 export default function SupportPage() {
     return (
         <>
-            <div className="flex flex-col items-center py-14 space-y-14 max-w-6xl m-auto">
+            <div className="flex flex-col items-center py-14 space-y-14">
                 {/* Header Section */}
                 <h1 className="text-3xl md:text-4xl font-bold text-center px-4">We Provide Solution’s for</h1>
                 <p className="text-center text-gray-500 text-base md:text-lg px-4">

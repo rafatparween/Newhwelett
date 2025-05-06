@@ -1,42 +1,82 @@
-import Image from 'next/image';
+"use client";
+import { useState } from "react";
+import { FiMenu } from "react-icons/fi";
+import Link from "next/link";
 
+export default function Header() {
+  const [isOpen, setIsOpen] = useState(false);
 
-const categories = [
-    { id: 1, title: 'Epson EcoTank L3250', image: '/dtf.jpg' },
-    { id: 2, title: 'HP Tango Smart Printer', image: '/hptango.jpg' },
-    { id: 3, title: 'Canon PIXMA G2020', image: '/man.webp' },
-    { id: 4, title: 'Brother HL-L2350DW', image: '/spaces.jpg' },
-    { id: 5, title: 'Xerox Phaser 6510', image: '/print.jpg' },
-    { id: 6, title: 'Ricoh SP 210', image: '/happygirl.jpg' },
-    { id: 7, title: 'Kyocera TASKalfa 1800', image: '/printer.jpg' },
-    { id: 8, title: 'Samsung Xpress M2070W', image: '/coat.jpeg' },
-  ];
-function Header() {
   return (
-    <div className="relative overflow-hidden bg-gray-100 py-8">
-      <div className="flex items-center space-x-4 animate-marquee">
-        {/* Duplicate the list for seamless scrolling */}
-        {[...categories, ...categories].map((category, index) => (
-          <div
-            key={index}
-            className="flex-shrink-0 w-64 bg-white rounded-lg shadow-lg overflow-hidden border border-gray-200"
-          >
-            <div className="relative w-full h-36">
-              <Image
-                src={category.image}
-                alt={category.title}
-                fill
-                className="object-cover"
-              />
+    <div className="flex flex-col items-center w-full">
+      {/* Navigation Bar */}
+      <nav className="bg-[#1C8DCEED] text-white w-full">
+        <div className="max-w-[90.33%] mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-[1280px] mx-auto flex justify-between items-center h-16">
+            {/* Mobile Menu Button */}
+            <button
+              className="md:hidden text-white text-3xl"
+              onClick={() => setIsOpen(!isOpen)}
+            >
+              <FiMenu />
+            </button>
+
+            {/* Desktop Navigation */}
+            <div className="hidden md:flex justify-between items-center w-full">
+              {[
+                "Printer Offline",
+                "Printer Setup",
+                "Scanner Setup",
+                "Support Home",
+                "Ink Cartridges Issue",
+                "Diagnostics",
+                "Business Support",
+              ].map((item, index) => (
+                <Link
+                  key={index}
+                  href="/"
+                  className="hover:text-gray-300 text-sm sm:text-base md:text-lg font-medium whitespace-nowrap px-3"
+                >
+                  {item}
+                </Link>
+              ))}
             </div>
-            <h3 className="text-center text-sm font-medium text-gray-800 mt-2">
-              {category.title}
-            </h3>
           </div>
-        ))}
+        </div>
+      </nav>
+
+      {/* Mobile Sidebar */}
+      <div
+        className={`fixed top-0 left-0 h-full w-72 bg-[#1C8DCEED] text-white transform ${
+          isOpen ? "translate-x-0" : "-translate-x-full"
+        } transition-transform duration-300 ease-in-out md:hidden`}
+      >
+        <button
+          className="absolute top-4 right-4 text-3xl"
+          onClick={() => setIsOpen(false)}
+        >
+          ✕
+        </button>
+        <div className="flex flex-col space-y-6 mt-20 pl-8">
+          {[
+            "Printer Offline",
+            "Printer Setup",
+            "Scanner Setup",
+            "Support Home",
+            "Ink Cartridges Issue",
+            "Diagnostics",
+            "Business Support",
+          ].map((item, index) => (
+            <Link
+              key={index}
+              href="/"
+              className="block text-lg font-medium"
+              onClick={() => setIsOpen(false)}
+            >
+              {item}
+            </Link>
+          ))}
+        </div>
       </div>
     </div>
   );
 }
-
-export default Header;

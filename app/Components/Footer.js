@@ -5,11 +5,11 @@ import { FaFacebook, FaTwitter, FaInstagram, FaYoutube } from "react-icons/fa";
 
 const Footer = () => {
     return (
-        <footer className="text-white py-20 bg-black h-[400px] pt-[14px]">
+        <footer className="text-white py-20 bg-gray-800 h-[400px] pt-[14px]">
             <div className="container mx-auto px-20 lg:px-20 py-20 flex flex-col gap-10 md:flex-row justify-between border-t border-slate-800">
                 <div className="flex">
                     <div className="font-bold text-center">
-                        <h1 className="text-[32px] mt-[89px]"> Uzair Graphic & Printing</h1>
+                        <h1 className="text-[32px] mt-[89px]">Micro-Sonic</h1>
                     </div>
                 </div>
 
@@ -20,8 +20,8 @@ const Footer = () => {
                             { name: 'Home', path: '/' },
                             { name: 'About us', path: '/about' },
                             { name: 'Contact us', path: '/contact' },
-                            { name: 'Services', path: '/services' },
-                            { name: 'Disclaimer', path: '/Disclaimer' }
+                            { name: 'Services', path: '/' },
+                            { name: 'Disclaimer', path: '/disclaimer' }
                         ].map(({ name, path }) => (
                             <Link
                                 key={name}
@@ -37,7 +37,7 @@ const Footer = () => {
                 <div>
                     <div className="flex flex-col text-start mb-4 md:mb-0 text-[14px]">
                         {[
-                            { name: 'Terms and Conditions', path: '/terms&condition' },
+                            { name: 'Terms and Conditions', path: '/term' },
                             { name: 'Privacy Policy', path: '/policy' },
                             { name: 'License Agreement', path: '/license-agreement' },
                             { name: 'Copyright Information', path: '/copyright-information' },
@@ -76,7 +76,7 @@ const Footer = () => {
             </div>
 
             <div className="flex items-center justify-center py-10 mt-[-103px]">
-                <span className="text-gray-400 leading-10">© Copyright, All Rights Reserved by  Uzair Graphic & Printing </span>
+                <span className="text-gray-400 leading-10">© Copyright, All Rights Reserved by micro-sonic.online </span>
             </div>
         </footer>
     );
