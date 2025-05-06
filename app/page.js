@@ -12,12 +12,13 @@ import PrinterS from "./components/PrinterS";
 // import SupportPage from "./components/SupportPage";
 import Header from "./components/Header";
 import Navbar from "./components/Navbar";
-import JivoChat from "./Jivochat";
+
 import SupportOptions from "./components/SupportOptions";
 import Digonode from "./components/Digonode";
 import Wrapper from "./components/Wrapper";
 import PrinterSetup from "./service/content/PrinterSetup";
 import SupportPage from "./components/SupportPage";
+import JivoChat from "./Jivochat";
 
 
 

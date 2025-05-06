@@ -214,11 +214,13 @@ import Image from "next/image";  // Make sure to import Image from Next.js
 import Link from "next/link";
 
 import { useRouter } from "next/navigation";
-import ErrorPageHndle from "./process/error.html/page";
 import InstallingDriversPage from "./process/page";
+
+
 import NavbarSection from "@/app/components/NavbarSection";
-import Storepage from "@/app/components/Storepage";
 import FooterSection from "@/app/components/FooterSection";
+import Storepage from "@/app/components/Storepage";
+
 
 
 function Printersearch() {
