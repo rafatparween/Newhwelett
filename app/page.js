@@ -1,24 +1,22 @@
 "use client"
 
-import Footer from "./components/Footer";
-import Customer from "./components/Customer";
-import Technicians from "./components/Technicians";
-import Assistance from "./components/Assistance";
 import Avoid from "./components/Avoid";
-import Helppage from "./components/Helppage";
+import Digonode from "./components/Digonode";
 import FooterSection from "./components/FooterSection";
-
-import PrinterS from "./components/PrinterS";
-// import SupportPage from "./components/SupportPage";
 import Header from "./components/Header";
 import Navbar from "./components/Navbar";
-
 import SupportOptions from "./components/SupportOptions";
-import Digonode from "./components/Digonode";
-import Wrapper from "./components/Wrapper";
-import PrinterSetup from "./service/content/PrinterSetup";
 import SupportPage from "./components/SupportPage";
+import Wrapper from "./components/Wrapper";
 import JivoChat from "./Jivochat";
+import PrinterSetup from "./service/content/PrinterSetup";
+
+
+
+
+
+
+
 
 
 
@@ -31,14 +29,11 @@ function Home() {
       <PrinterSetup/>
       <SupportOptions/>
      
-      {/* <HpSupportSection/> */}
-      {/* <Solutions/> */}
-      {/* <PrinterS/> */}
+    
       <SupportPage/>
       <Digonode/>
       
-      {/* <Technicians/> */}
-      {/* <Assistance/> */}
+  
      
       <Avoid/>
       <Wrapper/>
