@@ -40,7 +40,7 @@ function Home() {
       <PrinterGuide />
      
     </>
-  );
+  )
 }
 
 export default Home;

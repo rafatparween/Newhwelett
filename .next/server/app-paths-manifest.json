@@ -1,6 +1,18 @@
 {
+  "/_not-found/page": "app/_not-found/page.js",
+  "/about/page": "app/about/page.js",
+  "/components/help/page": "app/components/help/page.js",
+  "/disclaimer/page": "app/disclaimer/page.js",
+  "/components/projects/page": "app/components/projects/page.js",
   "/page": "app/page.js",
-  "/service/Pages/page": "app/service/Pages/page.js",
+  "/privacyPolicy/page": "app/privacyPolicy/page.js",
   "/service/Pages/install/page": "app/service/Pages/install/page.js",
-  "/service/Pages/install/process/page": "app/service/Pages/install/process/page.js"
+  "/service/Pages/install/process/error.html/page": "app/service/Pages/install/process/error.html/page.js",
+  "/service/Pages/install/process/page": "app/service/Pages/install/process/page.js",
+  "/service/Pages/page": "app/service/Pages/page.js",
+  "/service/page": "app/service/page.js",
+  "/termsConditions/page": "app/termsConditions/page.js",
+  "/components/signup/page": "app/components/signup/page.js",
+  "/contact/page": "app/contact/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js"
 }
